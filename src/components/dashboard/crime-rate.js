@@ -1,12 +1,9 @@
 import { Avatar, Box, Card, CardContent, Grid, Typography } from '@mui/material';
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
-import BoltIcon from '@mui/icons-material/Bolt';
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import GavelIcon from '@mui/icons-material/Gavel';
 
-export const Energy = (props) => (
-  <Card
-    sx={{ height: '100%' }}
-    {...props}
-  >
+export const DailyCrimeRate = (props) => (
+  <Card {...props}>
     <CardContent>
       <Grid
         container
@@ -19,43 +16,43 @@ export const Energy = (props) => (
             gutterBottom
             variant="overline"
           >
-            ENERGY USAGE (kWh)
+            DAILY CRIME RATE
           </Typography>
           <Typography
             color="textPrimary"
             variant="h4"
           >
-            ₱24k
+            10
           </Typography>
         </Grid>
         <Grid item>
           <Avatar
             sx={{
-              backgroundColor: 'warning.main',
+              backgroundColor: 'error.main',
               height: 56,
               width: 56
             }}
           >
-            <BoltIcon />
+            <GavelIcon />
           </Avatar>
         </Grid>
       </Grid>
       <Box
         sx={{
-          pt: 2,
+          alignItems: 'center',
           display: 'flex',
-          alignItems: 'center'
+          pt: 2
         }}
       >
-        <ArrowDownwardIcon color="success" />
+        <ArrowUpwardIcon color="error" />
         <Typography
-          color="success"
+          color="error"
+          variant="body2"
           sx={{
             mr: 1
           }}
-          variant="body2"
         >
-          12%
+          16%
         </Typography>
         <Typography
           color="textSecondary"
