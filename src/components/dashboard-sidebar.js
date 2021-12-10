@@ -3,6 +3,7 @@ import NextLink from 'next/link';
 import { useRouter } from 'next/router';
 import PropTypes from 'prop-types';
 import { Box, Divider, Drawer, Typography, useMediaQuery } from '@mui/material';
+import NewspaperIcon from '@mui/icons-material/Newspaper';
 import { ChartBar as ChartBarIcon } from '../icons/chart-bar';
 import { Cog as CogIcon } from '../icons/cog';
 import { Selector as SelectorIcon } from '../icons/selector';
@@ -14,6 +15,11 @@ const items = [
     href: '/',
     icon: (<ChartBarIcon fontSize="small" />),
     title: 'Dashboard'
+  },
+  {
+    href: '/news',
+    icon: (<NewspaperIcon fontSize="small" />),
+    title: 'News'
   },
   {
     href: '/settings',
