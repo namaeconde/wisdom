@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Box } from '@mui/material';
 import { styled } from '@mui/material/styles';
+import { DashboardNavbar } from './dashboard-navbar';
+import { DashboardSidebar } from './dashboard-sidebar';
 
 const DashboardLayoutRoot = styled('div')(({ theme }) => ({
   display: 'flex',
@@ -30,6 +32,11 @@ export const DashboardLayout = (props) => {
           {children}
         </Box>
       </DashboardLayoutRoot>
+      <DashboardNavbar onSidebarOpen={() => setSidebarOpen(true)} />
+      <DashboardSidebar
+        onClose={() => setSidebarOpen(false)}
+        open={isSidebarOpen}
+      />
     </>
   );
 };

@@ -1,5 +1,6 @@
 import Head from 'next/head';
-import { Box } from '@mui/material';
+import { Box, Container, Grid } from '@mui/material';
+import { Energy } from '../components/dashboard/energy';
 import { DashboardLayout } from '../components/dashboard-layout';
 
 const Dashboard = () => (
@@ -16,7 +17,22 @@ const Dashboard = () => (
         py: 8
       }}
     >
-      Main
+      <Container maxWidth={false}>
+        <Grid
+          container
+          spacing={3}
+        >
+          <Grid
+            item
+            lg={3}
+            sm={6}
+            xl={3}
+            xs={12}
+          >
+            <Energy />
+          </Grid>
+        </Grid>
+      </Container>
     </Box>
   </>
 );
