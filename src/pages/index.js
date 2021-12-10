@@ -7,6 +7,7 @@ import { GDPRate } from '../components/dashboard/city-gdp';
 import { HealthWatch } from '../components/dashboard/health-watch';
 import { VaccinationData } from '../components/dashboard/vaccination-data';
 import { PublicOpinion } from '../components/dashboard/public-opinion';
+import { CityProjects } from '../components/dashboard/city-projects';
 import { DashboardLayout } from '../components/dashboard-layout';
 
 const Dashboard = () => (
@@ -88,6 +89,15 @@ const Dashboard = () => (
             xs={12}
           >
             <PublicOpinion sx={{ height: '100%' }} />
+          </Grid>
+          <Grid
+            item
+            lg={8}
+            md={12}
+            xl={9}
+            xs={12}
+          >
+            <CityProjects />
           </Grid>
         </Grid>
       </Container>
