@@ -2,6 +2,7 @@ import Head from 'next/head';
 import { Box, Container, Grid } from '@mui/material';
 import { Energy } from '../components/dashboard/energy';
 import { DailyCrimeRate } from '../components/dashboard/crime-rate';
+import { UnemploymentRate } from '../components/dashboard/unemployment-rate';
 import { DashboardLayout } from '../components/dashboard-layout';
 
 const Dashboard = () => (
@@ -40,6 +41,15 @@ const Dashboard = () => (
             xs={12}
           >
             <DailyCrimeRate />
+          </Grid>
+          <Grid
+            item
+            xl={3}
+            lg={3}
+            sm={6}
+            xs={12}
+          >
+            <UnemploymentRate />
           </Grid>
         </Grid>
       </Container>
