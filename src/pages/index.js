@@ -6,6 +6,7 @@ import { UnemploymentRate } from '../components/dashboard/unemployment-rate';
 import { GDPRate } from '../components/dashboard/city-gdp';
 import { HealthWatch } from '../components/dashboard/health-watch';
 import { VaccinationData } from '../components/dashboard/vaccination-data';
+import { PublicOpinion } from '../components/dashboard/public-opinion';
 import { DashboardLayout } from '../components/dashboard-layout';
 
 const Dashboard = () => (
@@ -78,6 +79,15 @@ const Dashboard = () => (
             xs={12}
           >
             <VaccinationData sx={{ height: '100%' }} />
+          </Grid>
+          <Grid
+            item
+            lg={4}
+            md={6}
+            xl={3}
+            xs={12}
+          >
+            <PublicOpinion sx={{ height: '100%' }} />
           </Grid>
         </Grid>
       </Container>
