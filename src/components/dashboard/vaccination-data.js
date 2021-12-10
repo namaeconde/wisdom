@@ -8,7 +8,7 @@ export const VaccinationData = (props) => {
     datasets: [
       {
         data: [63, 15, 22],
-        backgroundColor: ['#3F51B5', '#e53935', '#FB8C00'],
+        backgroundColor: ['#4AA366', '#e53935', '#FB8C00'],
         borderWidth: 8,
         borderColor: '#FFFFFF',
         hoverBorderColor: '#FFFFFF'
@@ -43,7 +43,7 @@ export const VaccinationData = (props) => {
     {
       title: 'Full',
       value: 63,
-      color: '#3F51B5'
+      color: '#4AA366'
     },
     {
       title: 'Partial',
