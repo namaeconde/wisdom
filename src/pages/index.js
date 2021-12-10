@@ -66,8 +66,6 @@ const Dashboard = () => (
             item
             lg={8}
             md={12}
-            xl={9}
-            xs={12}
           >
             <HealthWatch />
           </Grid>

@@ -1,6 +1,7 @@
 import { CategoryScale } from 'chart.js'; 
 import Chart from 'chart.js/auto';
 import { Bar } from 'react-chartjs-2';
+import { CebuCityMap as CityMap } from '../../assets/maps/cebu-city';
 import { Box, Button, Card, CardContent, CardHeader, Divider, useTheme } from '@mui/material';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import ArrowRightIcon from '@mui/icons-material/ArrowRight';
@@ -99,11 +100,29 @@ export const HealthWatch = (props) => {
         title="Health"
       />
       <Divider />
-      <CardContent>
+      <CardContent
+         sx={{
+          display: "flex",
+          flexDirection: 'row'
+        }}
+      >
         <Box
           sx={{
             height: 400,
             position: 'relative'
+          }}
+        >
+          <CityMap
+            sx={{
+              height: 42,
+              width: 42
+            }}
+          />
+        </Box>
+        <Box
+          sx={{
+            height: 400,
+            width: "100%"
           }}
         >
           <Bar
